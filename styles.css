@@ -144,7 +144,7 @@ body {
     background-color: transparent;
 }
 .logoText{
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
     padding-right: 10px;
     color: white;
@@ -249,7 +249,7 @@ h1 {
 }
 
 .welcomeText{
-    font-size: 40px;
+    font-size: 35px;
     margin: 0; /* Remove default margin for h1 element */
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px 4px black;
