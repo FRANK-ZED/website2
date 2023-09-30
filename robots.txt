@@ -9,4 +9,4 @@ Allow: /support$
 Disallow: /private/
 
 # Specify the location of the sitemap for better crawling
-Sitemap: https://pandabuy.cheap/sitemap.xml
+Sitemap: https://pandabuydeals.com/sitemap.xml
