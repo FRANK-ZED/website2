@@ -1,0 +1,545 @@
+body {
+    overflow-y: auto;
+}
+
+/* Style the red banner above the navigation bar */
+.disclaimer-banner {
+    background-color: rgb(183, 4, 4);
+    /* Red color */
+    color: #ffffff;
+    /* White text color */
+    text-align: center;
+    padding: 1px;
+    font-size: medium;
+    padding-top: 10px;
+}
+
+.welcomeText {
+    font-size: 45px;
+    margin: 0;
+    /* Remove default margin for h1 element */
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px black;
+
+}
+
+.disclaimer-text {
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+@media (max-width: 740px) {
+    .disclaimer-text {
+        font-size: 11px;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .welcomeText {
+        font-size: 35px;
+
+    }
+
+    /* Style the green button */
+    .green-button {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #007bff;
+        border: 0px transparent;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Style individual product div for both mobile and desktop */
+    .product {
+        
+        max-width: 300px;
+        /* Limit the maximum width of each product */
+        min-width: 260px;
+        height: 250px;
+    }
+
+    /* Style the product images container */
+    .product-images {
+        max-width: 95%;
+
+    }
+
+    /* Style the product images */
+    .product-images img {
+        width: 120px;
+    }
+
+
+    .product h2 {
+        font-size: 20px;
+    }
+
+    
+
+    /* Style the product section */
+    .product-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1460px;
+        /* Set a maximum width for the product section */
+        margin: 0 auto;
+        /* Center the product section horizontally */
+        padding: 10px;
+        /* Add some spacing around the products */
+
+    }
+
+}
+
+@media (max-width: 360px) {
+    .disclaimer-text {
+        font-size: 9px;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .welcomeText {
+        font-size: 30px;
+
+    }
+
+    /* Style the product images container */
+    .product-images {
+        max-width: 80%;
+
+    }
+
+    /* Style the product images */
+    .product-images img {
+        width: 100px;
+
+    }
+}
+
+/* Style the main text container */
+.parallax-text {
+    text-align: center;
+    /* Center the content horizontally */
+    padding-top: 200px;
+    /* Add top padding to position the text */
+    padding-bottom: 50px;
+    /* Add bottom padding for spacing */
+}
+
+.parallax-text2 {
+    text-align: center;
+    /* Center the content horizontally */
+    padding-top: 20px;
+    /* Add top padding to position the text */
+    padding-bottom: 20px;
+    /* Add bottom padding for spacing */
+    color: #000;
+}
+
+/* Style the green button */
+.green-button {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #007bff;
+    border: 0px transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.green-button:hover {
+    background-color: #007bff;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+}
+
+/* Style the parallax container */
+.parallax-container {
+    overflow-x: hidden;
+    /* Hide horizontal overflow */
+    position: relative;
+    /* Set position relative for absolute positioning */
+    height: 100vh;
+    /* Set the height to fill the viewport */
+}
+
+/* Style the parallax images */
+.parallax-image {
+    position: relative;
+    height: 100%;
+}
+
+.parallax-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio and fill the container without stretching */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Move the images to the background */
+}
+
+.footer {
+    background-color: #198ac3;
+    /* You can change this color */
+    color: #ffffff;
+    /* Text color */
+    text-align: center;
+    padding: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+.qrcode {
+    width: 300px;
+    height: auto;
+}
+
+a:link {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    color: #ff0000;
+}
+
+/* Style individual product div for both mobile and desktop */
+.product {
+    width: calc(100% - 20px);
+    /* Set a maximum width for each product div - minus 20px for spacing */
+    max-width: 340px;
+    /* Limit the maximum width of each product */
+    min-width: 300px;
+    height: 300px;
+    /* Set a fixed height for each product div */
+    margin: 10px auto;
+    /* Add spacing around the products */
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 15px rgba(19, 19, 19, 0.448);
+    /* Add a small shadow to the product boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #141414;
+    transition: 0.5s;
+}
+
+/* Style the product images container */
+.product-images {
+    display: flex;
+    justify-content: space-around;
+    /* Decrease the space between images */
+    max-width: 95%;
+    margin: 0 auto;
+
+}
+
+/* Style the product images */
+.product-images img {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 5px;
+    /* Add some margin to separate the images */
+}
+
+/* Add a hover effect on the product boxes */
+.product:hover {
+    transform: translateY(-10px);
+    /* Move the box up slightly on hover */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.448);
+    /* Add a subtle shadow on hover */
+    border-radius: 1px;
+}
+
+.product h2 {
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+    /* Remove bottom margin for h2 element to reduce white space below prices */
+    text-decoration: none;
+    /* Remove underline from h2 element */
+}
+
+.product p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* Add margin at the bottom of the p element to create space between price and description */
+    color: #000000;
+    /* Set the product text color to black */
+    text-decoration: none;
+    /* Remove underline from p element */
+}
+
+
+/* Style the product section */
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1460px;
+    /* Set a maximum width for the product section */
+    margin: 0 auto;
+    /* Center the product section horizontally */
+    padding: 10px;
+    /* Add some spacing around the products */
+
+}
+
+/* Style the search bar and button */
+.search-form {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    position: relative;
+}
+
+.search-center {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchText {
+    margin-top: -25px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: var(--searchText-color);
+    padding: 15px;
+}
+
+/* Increase the size of the search input */
+.search-form input {
+
+    width: 100%;
+    /* Set a fixed width for the input field */
+    height: 90%;
+    display: block;
+    border-radius: 25px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 5px 8px 3px rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 8px 40px 8px 20px;
+    /* Adjust the padding to make it bigger */
+}
+
+.search-form input:focus {
+    outline: none;
+    background-color: white;
+    color: #000;
+}
+
+/* Styles for the search button */
+#searchButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    font-size: 18px;
+}
+
+#searchButton i {
+    color: rgb(77, 77, 77);
+}
+
+#searchButton:hover {
+    color: rgb(0, 0, 0);
+}
+
+.search-container {
+    width: 50%;
+    min-width: 250px;
+    max-width: 300px;
+    height: 180px;
+    text-align: center;
+    margin-bottom: -70px;
+}
+
+.product-list li {
+    margin: 5px 0;
+}
+
+/* Style the categories button */
+.categories-button {
+    display: block;
+    margin: auto;
+    /* Center the button horizontally */
+    padding: 15px 20px;
+    background-color: #198ac3;
+    /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories-button:hover {
+    background-color: #135576;
+    /* Darker blue color on hover */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+    left: 50%;
+    /* Center the dropdown menu horizontally */
+    transform: translateX(-50%);
+    /* Center the dropdown menu relative to its parent */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add drop shadow to the dropdown content */
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: #333;
+    padding: 16px 18px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Style the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when the button is clicked */
+.show {
+    display: block;
+}
+
+/* Style the active category link */
+.dropdown-content a.active {
+    background-color: #198ac3;
+    /* Blue color */
+    border: none;
+    color: #fff;
+    position: relative;
+    /* Add relative positioning to the active link */
+}
+
+/* Create a pseudo-element to fill the entire area */
+.dropdown-content a.active::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: -1;
+    background-color: #007bff;
+    /* Blue color */
+    border-radius: 5px;
+    /* Adjust this value as needed */
+}
+
+.to-top {
+    background: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #dddddd;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 30px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.support-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.support-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.follow-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.qr-code-container {
+    margin-top: 20px;
+}
+
+.titletext {
+    text-align: center;
+    color: var(--titletext-color);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.description {
+    font-size: 18px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
