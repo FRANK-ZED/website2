@@ -212,7 +212,12 @@ body {
 a:link {
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
-    color: #ff0000;
+}
+
+.price{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    color: red;
 }
 
 /* Style individual product div for both mobile and desktop */
