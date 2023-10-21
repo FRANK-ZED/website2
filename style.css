@@ -548,3 +548,11 @@ p {
     margin-bottom: 20px;
     text-align: center;
 }
+.dis{
+    color: rgb(16, 14, 14);
+}
+
+.dis :hover{
+    text-decoration: solid;
+    text-decoration: underline;
+}
