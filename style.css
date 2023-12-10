@@ -548,8 +548,18 @@ p {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.info{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #050A30;
+}
+
 .dis{
-    color: rgb(16, 14, 14);
+    color: rgb(255, 255, 255);
 }
 
 .dis :hover{
